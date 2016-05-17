@@ -8,7 +8,13 @@
    I installed packages with the help of others on the team and then practised using git verion control and emacs editor.
 
 ** [2016-05-17 Tue]
-   
+   + What is the task I was assigned today?
+   Understanding how a web application is built with the help of a schematic diagram and noting important components of the application.
+   Understanding how datamodels are created based on client requirements and usage of mathematical operators to represent verbal conditions laid down by the client
+   + What did I get done against each task?
+   Wrote notes on how a web application is built using emacs editor and put it on my github repository for future reference.
+   Revisited sets and relations and applied them while developing datamodels.
+   Created a tabular form of all the possible operations the application may need to deal with.
 
 ** Weekly  Summary
    + What are the insights gained?
