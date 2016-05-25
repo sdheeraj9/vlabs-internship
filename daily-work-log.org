@@ -41,5 +41,9 @@
    Building a data model and an object model for an application.
    + What is my footprint in the realization of the project?
    Learnt the basics of building a web application, which is the first step in working towards the completion of the project.
+** [2016-05-23 Mon]
+   + What is the task I was assigned today?
+   
+   
 * Month of June
 * Month of July
