@@ -1,0 +1,118 @@
+var button_start, count, traffic_interval;
+
+function setup() {
+
+  // create canvas
+  createCanvas(windowWidth, windowHeight);
+
+ count = 0;
+
+ ellipse(600,600,20,20);
+ ellipse(650,600,20,20);
+ ellipse(700,600,20,20);
+
+ ellipse(600,650,20,20);
+ ellipse(650,650,20,20);
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ ellipse(650,700,20,20);
+ ellipse(700,700,20,20);
+
+ button_start = createButton('Start');
+ button_start.position('20,50');
+
+ button_start.mouseClicked(traffic_start);
+
+}
+
+function traffic_start()
+{
+ traffic_interval = setInterval(traffic_signals,10000);
+ traffic_signals();
+}
+
+function traffic_signals()
+{
+if(count%3 == 0)
+{
+
+fill(0,200,0);
+ellipse(600,650,20,20);
+ellipse(700,650,20,20);
+
+fill(0,0,200);
+ellipse(600,700,20,20);
+
+fill(200,0,0);
+ellipse(650,600,20,20);                 
+ellipse(700,600,20,20);
+
+fill(0,0,0);
+ellipse(600,600,20,20);
+ 
+ellipse(650,650,20,20);
+  
+ellipse(650,700,20,20);
+
+ellipse(700,700,20,20);  
+
+count++;
+}
+
+else if(count%3 == 1)
+{
+
+fill(0,200,0);
+ellipse(650,650,20,20);
+ellipse(600,650,20,20);
+
+fill(0,200,0);
+ellipse(600,650,20,20);
+
+fill(0,0,200);
+ellipse(650,700,20,20);
+
+fill(200,0,0);
+ ellipse(600,600,20,20);
+ ellipse(700,600,20,20);
+
+fill(0,0,0);
+
+ellipse(650,600,20,20); 
+ 
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ 
+ ellipse(700,700,20,20); 
+
+count++;
+}
+
+else if(count%3 == 2)
+{
+
+fill(0,0,200);
+ellipse(700,700,20,20);
+
+fill(0,200,0);
+ellipse(650,650,20,20);
+
+fill(200,0,0);
+
+ ellipse(600,600,20,20);
+ ellipse(650,600,20,20);
+ ellipse(700,600,20,20);
+
+fill(0,0,0);
+ ellipse(600,650,20,20);
+ 
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ ellipse(650,700,20,20);
+ 
+count++;
+}
+}

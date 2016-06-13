@@ -1,0 +1,206 @@
+#+title: Iterative System Example : Traffic signal manager
+
+
+* Introduction
+This application built using javascript and p5 framework uses iterative loops
+to make a traffic signal manager for a Y-junction ie; an intersection of three
+roads. Each of these roads are single lane roads thereby making it unfeasible
+to give a free left to the roads. This increases the need for an optimized code
+giving access to all roads with minimum waiting period at the signal.
+* Implementation
+
+** Initial Setup
+The setup function creates a canvas of the entire page size.
+info_1, info_2, info_3, road_1, road_2, road_3 display font on the web page. In
+addition to this, the roads and the signals have been created using line and
+ellipse commands. And a button named Start has been created.
+ 
+#+BEGIN_SRC 
+function setup() {
+
+  // create canvas
+  createCanvas(windowWidth, windowHeight);
+
+ count = 0;
+
+info_1 = createElement('h7', 'S1');
+info_1.position(590,550);
+
+info_2 = createElement('h7', 'S2');
+info_2.position(640,550);
+
+info_3 = createElement('h7', 'S3');
+info_3.position(690,550);
+
+road_1 = createElement('h7', 'ROAD 1');
+road_1.position(120,270);
+
+road_2 = createElement('h7', 'ROAD 2');
+road_2.position(320,250);
+
+road_3 = createElement('h7', 'ROAD 3');
+road_3.position(320,370);
+
+line(100,300,200,300);
+line(100,310,200,310);
+line(100,320,200,320);
+
+line(250,250,320,180);
+line(260,250,330,180);
+line(270,250,340,180);
+
+line(250,370,320,440);
+line(260,370,330,440);
+line(270,370,340,440);
+
+
+ ellipse(600,600,20,20);
+ ellipse(650,600,20,20);
+ ellipse(700,600,20,20);
+
+ ellipse(600,650,20,20);
+ ellipse(650,650,20,20);
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ ellipse(650,700,20,20);
+ ellipse(700,700,20,20);
+
+ button_start = createButton('Start');
+ button_start.position(650,300);
+  
+ button_start.mouseClicked(traffic_start);
+  
+#+END_SRC
+
+** Variables
+*** button_start
+This variable has been created to create a button, which can be clicked with
+the mouse and the function traffic_start can be called.
+
+*** count
+This variable is an integer which has been initialized to 0. This variable is
+used to iterate over the three different intervals of signals.
+
+*** traffic_interval
+This variable sets an interval to iterate with a time delay, so that a specific
+set of signals for the three roads stay for a while and then changes to the
+next combination.
+
+*** info_1, info_2, info_3
+These three variables have been created to display the words S1, S2, S3 on top
+of the signals to indicate that each of the signal corresponds to that
+particular road.
+
+*** road_1, road_2, road_3
+These three variables have been created to display the name of the road next to
+the corresponding road diagrams.
+
+
+** Functions
+Two functions viz, traffic_start and traffic_signals have been created to
+facilitate the working of this application with ease.
+The function traffic_start sets an interval and iterates the loop of function
+traffic_signals with a time gap. The function traffic_signals is called within
+this function traffic_start.
+The function traffic_signals uses the variable count and switches between the
+three sub-cases continuously. Each of these sub cases have instructions to fill
+out specific colors in the signals thereby indicating the access that has been
+given to the vehicles on that specific road.
+The red light refers to restriction for vehicles in either one or two
+directions, while blue light refers to access to proceed in the rightward
+direction and the green light refers to access to proceed in the leftward direction.
+#+BEGIN_SRC 
+function traffic_start()
+{ 
+ traffic_interval = setInterval(traffic_signals,10000);
+ traffic_signals();
+}
+
+function traffic_signals()
+{
+if(count%3 == 0)
+{
+
+fill(0,200,0);
+ellipse(600,650,20,20);
+ellipse(700,650,20,20);
+
+fill(0,0,200);
+ellipse(600,700,20,20);
+
+fill(200,0,0);
+ellipse(650,600,20,20);                 
+ellipse(700,600,20,20);
+
+fill(0,0,0);
+ellipse(600,600,20,20);
+ 
+ellipse(650,650,20,20);
+  
+ellipse(650,700,20,20);
+
+ellipse(700,700,20,20);  
+
+count++;
+}
+
+else if(count%3 == 1)
+{
+
+fill(0,200,0);
+ellipse(650,650,20,20);
+ellipse(600,650,20,20);
+
+fill(0,200,0);
+ellipse(600,650,20,20);
+
+fill(0,0,200);
+ellipse(650,700,20,20);
+
+fill(200,0,0);
+ ellipse(600,600,20,20);
+ ellipse(700,600,20,20);
+
+fill(0,0,0);
+
+ellipse(650,600,20,20); 
+ 
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ 
+ ellipse(700,700,20,20); 
+
+count++;
+}
+
+else if(count%3 == 2)
+{
+
+fill(0,0,200);
+ellipse(700,700,20,20);
+
+fill(0,200,0);
+ellipse(650,650,20,20);
+
+fill(200,0,0);
+
+ ellipse(600,600,20,20);
+ ellipse(650,600,20,20);
+ ellipse(700,600,20,20);
+
+fill(0,0,0);
+ ellipse(600,650,20,20);
+ 
+ ellipse(700,650,20,20);
+ 
+ ellipse(600,700,20,20);
+ ellipse(650,700,20,20);
+ 
+count++;
+}
+}
+#+END_SRC
+
+
