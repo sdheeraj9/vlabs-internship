@@ -135,10 +135,23 @@
 ** [2016-06-20 Mon]
    Started using Google Web Designer and checked out fabric.js framework.
 ** [2016-06-21 Tue]
-   Found Google Web designer hard to use without much help from internet due to it still being in beta.
+   Took leave because of college fest related work.
 ** [2016-06-22 Wed]
+   Found Google Web designer hard to use without much help from internet due to it still being in beta.
    Started looking for other alternative tools to use for building the framework that created animations.
 ** [2016-06-23 Thu]
+   The project was changed to Conversion of Flash animated labs on Virtual Labs to JS run labs. Another intern had already been working on this conversion for a few weeks and were asked to coordinate with her and try finding ways to simplify the conversion for scaling up the process.
+** [2016-06-24 Fri]
+   Had a meeting with professor and were asked to make a slight change to our current project and start by taking one particular experiment from the existing flash run labs of IIITH and use different possible frameworks and tools to get the conversion done. This is to be documented and shown to think about the easiest way to get the conversions done in a large scale. The old project to develop a framework that directly converts flash animations to javascript animations was temporarily put on hold.
+** Weekly Summary
+   Most of the time of the week was spent on researching online for different existing tools and frameworks that can be employed to convert the existing flash animations of virtual labs to the more supportive javascript format.
+** [2016-06-27 Mon]
+   We went through the code of the intern who had already converted a flash lab into a javascript lab and the process involved in doing do. We looked up for the online photo editing tools and decompiler softwares used for fragmenting the existing lab in flash and building it uo from scratch by using a new framework.
+** [2016-06-28 Tue]
+   We identified p5 framework of javascript as a viable one for this conversion and worked on identifying reusable parts of code from the already converted lab.
+** [2016-06-29 Wed]
+
+   
    
    
    
