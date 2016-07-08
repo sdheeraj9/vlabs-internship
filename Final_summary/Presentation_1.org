@@ -1,4 +1,4 @@
-#+TITLE: Project: Exploring frameworks for building virtual labs from scratch
+#+TITLE: Project: Exploring frameworks for building labs from scratch
 #+AUTHOR: Dheeraj Satyavolu
 
 * Introduction
