@@ -1,0 +1,68 @@
+#+TITLE: Project: Exploring frameworks for building virtual labs from scratch
+#+AUTHOR: Dheeraj Satyavolu
+
+* Introduction
+The advancement in computer science has had a profound impact on almost all
+walks of life. The field of education has seen many innovations in this
+regard. The traditional and conventional ways of learning have been made
+superfluous by innovative and interactive animations that illustrate important
+concepts that are taught in high school and college in the form of online
+labs. The lack of adequate infrastructure to cater to the needs of the huge population of
+Indian students, makes initiatives like Virtual Labs very vital. 
+
+
+* Motivation  
+The idea of simulating real experiments online  that can be performed in labs
+at various research institutions is fundamentally important with respect to the
+scenario of Indian infrastructure and the ever growing demand for educational
+facilities. Hence, the demand for knowing how to create these simulations that
+have so many applications for education and training has gone up. Many
+institutions in India and abroad are eager to search for better alternatives to
+create these simulations, in terms of ease in making, efficiency and visual effects.
+
+
+* Tools explored
+Javascript has introduced a lot of frameworks and libraries for creating simple
+and complicated animations. A few of them to list would be:
+
+** P5 library
+This is a javascript library that comes handy when one is trying to explore
+animations that require artistic tools.
+
+Link: https://p5js.org/
+
+This specific library was explored and a few animations were created. Two of
+them are as follows:
+
+*** Traffic Signal Simulator for a Y-junction
+
++ This is a simple application that uses iteration to manage the traffic at a
+  three road intersection and also plots graphs to verify that at no point cars
+  coming from different directions run into each other.
+
++ The github link for this application is:
+https://github.com/sdheeraj9/vlabs-internship/tree/master/traffic_signals
+
+*** Distance vs time graph plotter
+
++ The application takes an input of initial distance, initial velocity and
+  initial accleration.
+
++ It plots distance vs time graph for the above mentioned input values.
+
++ It also lets one pause the graph and change the velocity and accleration
+  parameters and alter the path and plot accordingly.
+
++ The github link for this application is:
+
+
+
+** Google Web Designer
++ This framework of javascript was created by Google and is still in beta
+  stage. This application's design enables one to create animations in a much more intuitive way without worrying about code.
++ The documentation for using Google Web Designer for the purpose of creating
+  virtual labs was made after trying Google Web Designer's beta version.
++ The github link for it is:
+
+
+* References

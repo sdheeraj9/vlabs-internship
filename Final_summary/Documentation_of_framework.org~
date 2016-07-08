@@ -1,0 +1,155 @@
+#+TITLE: Documentation for creating a framework that generates all experiments of a lab.
+#+AUTHOR: Dheeraj Satyavolu
+
+* Idea
+
+
++ In this approach, a library consisting of all the apparatus needed for the
+  lab is created and each of the apparatus objects has some predefined functions that it can perform.
+
++ Now these apparatus objects can be imported from the library and placed on a
+  platform where the experiment is to be conducted.
+
++ All the apparatus objects relevant to a particular experiment of a lab are
+  imported and placed in sequential order after assigning each object with a
+  task(from the predefined functions for that object).
+
++ Now, this experiment is launched and an html code is generated. This html code can now be used to launch the experiment online.
+
+
+* Structure   
+
+
++ The page is divided into two frames.
+
++ One frame will contain all the images of apparatus relevant to our lab.
+
++ The second frame will contain an empty platform(analogous to the experiment
+  table in an actual physical experiment).
+
++ The apparatus that will be used for this experiment can be dragged from the first frame and dropped into the second frame.
+
+
+* Working
+
+
++ A drag and drop function is employed to be able to drag a specific apparatus
+  from the first frame and drop it in the in the second one.
+
++ Now all the appratus objects are enabled in a manner so as to make it
+  possible to right click it and give it a sequence number(the step number
+  associated with the apparatus with respect to the experiment) and left click
+  it and give it a task(from the predefined tasks it is capable of doing).
+
++ After doing these steps, an experiment of the lab can be launched. This
+  launch command will generate the necessary code for the experiment to be made online with animations.
+
+
+* Advantages of this approach
+
+
++ Using an approach of this sort makes it very easy to populate a lab with
+  numerous experiments using the basic apparatus of a lab keeping in mind all
+  the things a specific apparatus can do.
+
++ The requirement to code for each experiment of a lab can be eliminated by
+  using this approach.
+
++ Also building a lab of experiments becomes more organised and structured.
+
+
+* Table
+
+
+The below table covers three chemistry labs that are currently available on
+virtual labs. This gives an idea of how the predefined functions of the objects
+in the proposed library will look like.
+
+NOTE: Below, CASCL stands for Colloid and Surface Chemistry Lab. MASL stands
+for Molecular and Absorption Spectroscopy Lab. CDSL stands for Circular
+Dichroism Spectroscopy Lab.
+
+| Apparatus             | Lab   | Experiment | Functionality                               |
+|-----------------------+-------+------------+---------------------------------------------|
+| Beaker                | CASCL |        1,2 | 1.Getting filled with a liquid.             |
+|                       | MASL  | All expts. | 2.Giving out liquid to a pipette.           |
+|                       |       |            | 3.Moving from one location to another.      |
+|                       |       |            | 4.Taking in a powder.                       |
+|                       |       |            | 5.Changing view of its contents.            |
+| Glass rod             | CASCL |          1 | 1.Stirring.                                 |
+|                       |       |            | 2.Moving from one location to another.      |
+| Conical flask         | CASCL |          1 | 1.Moving from one location to another.      |
+|                       | MASL  | All expts. | 2.Taking in a magnetic bead.                |
+|                       |       |            | 3.Changing view of its contents.            |
+| Magnetic Stirrer      | CASCL |          1 | 1.Heats the objects placed on it.           |
+| and Heater            |       |            |                                             |
+| Magnet                | CASCL |          1 | 1.Moving from one location to another.      |
+|                       |       |            | 2.Rotates.                                  |
+| A powdered substance  | CASCL |          1 | 1.Adds its contents into another            |
+|                       |       |            | container.                                  |
+| Pipette               | CASCL |          1 | 1.Moving from one location to another.      |
+|                       | MASL  | All expts. | 2.Taking in liquid from a container.        |
+|                       |       |            | 3.Giving out liquid into a container.       |
+| Watch glass           | CASCL |          2 | 1.Moving from one place to another.         |
+| Microwave             | CASCL |          2 | 1.Taking in a beaker.                       |
+|                       |       |            | 2.Letting out a beaker.                     |
+| Thermometer           | CASCL |          2 | 1.Moving from one location to another.      |
+|                       |       |            | 2.Giving out temperature reading.           |
+| Gel mould             | CASCL |          2 | 1.Moving from one location to another.      |
+|                       |       |            | 2.Taking in liquid.                         |
+| Water bath            |       |            | 1.Taking in a beaker.                       |
+|                       |       |            | 2.Letting out the beaker.                   |
+|                       |       |            | 3.Heating the beaker.                       |
+| Spoon with substance  | CASCL |          1 | 1.Moving from one location to another.      |
+|                       |       |            | 2.Emptying its contents into container.     |
+| Cloth with stains     | CASCL |            | 1.Moving from one location to another.      |
+|                       |       |            | 2.Changing into a clean cloth.              |
+| Spectrophotometer     | MASL  | All expts. | 1.Taking in a sample.                       |
+|                       |       |            | 2.Turning on.                               |
+|                       |       |            | 3.Turning off.                              |
+| Computer              | MASL  | All expts. | 1.Scans samples placed in spectrophotometer |
+|                       |       |            | and plots appropriate graphs.               |
+| Cuvette               | MASL  | All expts. | 1.Moving from one location to another.      |
+|                       |       |            | 2.Taking in liquid.                         |
+|                       |       |            | 3.Giving out liquid to pipette.             |
+| Cell                  | CDSL  |            | 1.Moving from one location to another.      |
+|                       |       |            | 2.Taking in liquid.                         |
+|                       |       |            | 3.Going into polarimeter.                   |
+| Polarimeter           | CDSL  |            | 1.Turning on and giving out light.          |
+| Container with liquid | CASCL |          2 | 1.Moving from one location to another.      |
+|                       |       |            | 2.Pouring some of its contents into another |
+|                       |       |            | container.                                  |
+|                       |       |            | 3.Allows spoon to take out some amount.     |
+
+
+* Libraries
+
+
+The following are the list of libraries available that can be used in
+building this application.
+
+** Edraw Visualisation Solutions 
+
+
+Link: https://www.edrawsoft.com/laboratory-equipment-shapes.php
+
++ The software can be downloaded for windows,mac and linux operating
+  systems. This software has received positive reviews but is a paid software.
+
+
+
+** Home Training Tools
+
+
+Link: http://www.hometrainingtools.com/a/chemistry-labware-picture-glossary
+
++ This is just an online picture glossary, which contains images of most of the
+  basic apparatus like beakers, flasks and pipettes. The images needed can directly be downloaded.
+
+
+** Pixabay
+
+
+Link: https://pixabay.com/en/photos/?image_type=&cat=&min_width=&min_height=&q=chemistry+lab&order=popular
+
++ This is a free image collection which contains a lot of chemistry lab apparatus images.
