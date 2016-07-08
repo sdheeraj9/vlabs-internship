@@ -81,6 +81,7 @@
    Start working on the front-end of the application.
    + What did I get done against each task?
    Inspite of trying to fix all the errors of rest API the previous day, some had to be addressed today. Finished writing login logout part of the front-end.
+* Month of June
 ** [2016-06-01 Wed]
    + What is the task I was assigned today?   
    Finish writing the front-end code for the application.
@@ -110,13 +111,55 @@
    Used an iterative loop moving a point pixel by pixel with some time delay to plot the distance vs time graph while also enabling the user to change the values of speed and accleration thereby altering the path all along.
 ** [2016-06-08 Wed]
    + What is the task I was assigned today? 
-   
+   Create more animations using p5 framework of javascript.
    + What did I get done against each task? 
+   We brainstormed about different examples that use infinite iterative systems. Started working on a simple game called Atlas.
+** [2016-06-09 Thu]
+   We completed writing the code for the Atlas game and started working on an example where a ball is randomly thrown among four individuals and the process can be iterated for as many times and one wants.
+** [2016-06-10 Fri]
+   We completed working on the ball throwing application after getting rid of a persisitent problem in logic.
+** Weekly Summary
+   We started using p5 framework of javascript, which made it significantly easier to create animations using javascript.
+** [2016-06-13 Mon]
+   We started working on two new examples viz, traffic signal simulator and an application that takes a polynomial and an x value as input and plots f(x),f(f(x)) and so on.
+** [2016-06-14 Tue]
+   We continued working on the two applications we started making the previous day and also made minor changes to the ball throwing application.
+** [2016-06-15 Wed]
+   Finally finished writing the main essential logic code for the three applications. We were asked to make plots to explain the applications in a more elaborate way and started doing it.
+** [2016-06-16 Thu]
+   Had some issues getting the plots of the traffic signal simulator right but managed to get it done.
+** [2016-06-17 Fri]
+   We discussed about our applications with the professor and were asked to think about building a framework that can automatically generate animations like our applications upon taking some basic inputs like f and x.
+** Weekly Summary
+   We familiarised ourselves with p5 framework of javascript and built a couple of applications using them to get a hang of making animations for a lab.
+** [2016-06-20 Mon]
+   Started using Google Web Designer and checked out fabric.js framework.
+** [2016-06-21 Tue]
+   Took leave because of college fest related work.
+** [2016-06-22 Wed]
+   Found Google Web designer hard to use without much help from internet due to it still being in beta.
+   Started looking for other alternative tools to use for building the framework that created animations.
+** [2016-06-23 Thu]
+   The project was changed to Conversion of Flash animated labs on Virtual Labs to JS run labs. Another intern had already been working on this conversion for a few weeks and were asked to coordinate with her and try finding ways to simplify the conversion for scaling up the process.
+** [2016-06-24 Fri]
+   Had a meeting with professor and were asked to make a slight change to our current project and start by taking one particular experiment from the existing flash run labs of IIITH and use different possible frameworks and tools to get the conversion done. This is to be documented and shown to think about the easiest way to get the conversions done in a large scale. The old project to develop a framework that directly converts flash animations to javascript animations was temporarily put on hold.
+** Weekly Summary
+   Most of the time of the week was spent on researching online for different existing tools and frameworks that can be employed to convert the existing flash animations of virtual labs to the more supportive javascript format.
+** [2016-06-27 Mon]
+   We went through the code of the intern who had already converted a flash lab into a javascript lab and the process involved in doing do. We looked up for the online photo editing tools and decompiler softwares used for fragmenting the existing lab in flash and building it uo from scratch by using a new framework.
+** [2016-06-28 Tue]
+   We identified p5 framework of javascript as a viable one for this conversion and worked on identifying reusable parts of code from the already converted lab.
+** [2016-06-29 Wed]
+
    
    
    
    
    
    
-* Month of June
+   
+   
+   
+   
+
 * Month of July
